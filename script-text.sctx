@@ -1,0 +1,1000 @@
+float  fQuestDelayTime
+short buffer
+
+short blamod
+short blumod
+short hanmod
+short armmod
+short blomod
+short heamod
+short athmod
+short acrmod
+short ligmod
+short secmod
+short snemod
+short marmod
+short mermod
+short spemod
+short illmod
+short alcmod
+short conmod
+short mysmod
+short altmod
+short desmod
+short resmod
+
+begin gamemode
+
+	set fQuestDelayTime to 0.5
+	
+		if player.getbaseav blade < 99 && blamod > 0
+			set buffer to (98 - player.getbaseav blade )
+			if buffer < blamod 
+				set buffer to (player.getbaseav blade - 99)
+				player.modav blade buffer
+				set blamod to (blamod - buffer)
+				player.setav blade 99
+			else
+				set buffer to ( 0 - blamod )
+				player.modav blade buffer
+				set buffer to (player.getbaseav blade + blamod )
+				player.setav blade buffer
+				set blamod to 0
+			endif
+		endif
+	
+		if player.getbaseav blunt < 99 && blumod > 0
+			set buffer to (98 - player.getbaseav blunt )
+			if buffer < blumod 
+				set buffer to (player.getbaseav blunt - 99)
+				player.modav blunt buffer
+				set blumod to (blumod - buffer)
+				player.setav blunt 99
+			else
+				set buffer to ( 0 - blumod )
+				player.modav blunt buffer
+				set buffer to (player.getbaseav blunt + blumod )
+				player.setav blunt buffer
+				set blumod to 0
+			endif
+		endif
+
+		if player.getbaseav handtohand < 99 && hanmod > 0
+			set buffer to (98 - player.getbaseav handtohand )
+			if buffer < hanmod 
+				set buffer to (player.getbaseav handtohand - 99)
+				player.modav handtohand buffer
+				set hanmod to (hanmod - buffer)
+				player.setav handtohand 99
+			else
+				set buffer to ( 0 - hanmod )
+				player.modav handtohand buffer
+				set buffer to (player.getbaseav handtohand + hanmod )
+				player.setav handtohand buffer
+				set hanmod to 0
+			endif
+		endif
+
+		if player.getbaseav armorer < 99 && armmod > 0
+			set buffer to (98 - player.getbaseav armorer )
+			if buffer < armmod 
+				set buffer to (player.getbaseav armorer - 99)
+				player.modav armorer buffer
+				set armmod to (armmod - buffer)
+				player.setav armorer 99
+			else
+				set buffer to ( 0 - armmod )
+				player.modav armorer buffer
+				set buffer to (player.getbaseav armorer + armmod )
+				player.setav armorer buffer
+				set armmod to 0
+			endif
+		endif
+
+		if player.getbaseav block < 99 && blomod > 0
+			set buffer to (98 - player.getbaseav block )
+			if buffer < blomod 
+				set buffer to (player.getbaseav block - 99)
+				player.modav block buffer
+				set blomod to (blomod - buffer)
+				player.setav block 99
+			else
+				set buffer to ( 0 - blomod )
+				player.modav block buffer
+				set buffer to (player.getbaseav block + blomod )
+				player.setav block buffer
+				set blomod to 0
+			endif
+		endif
+
+		if player.getbaseav heavyarmor < 99 && heamod > 0
+			set buffer to (98 - player.getbaseav heavyarmor )
+			if buffer < heamod 
+				set buffer to (player.getbaseav heavyarmor - 99)
+				player.modav heavyarmor buffer
+				set heamod to (heamod - buffer)
+				player.setav heavyarmor 99
+			else
+				set buffer to ( 0 - heamod )
+				player.modav heavyarmor buffer
+				set buffer to (player.getbaseav heavyarmor + heamod )
+				player.setav heavyarmor buffer
+				set heamod to 0
+			endif
+		endif
+
+		if player.getbaseav athletics < 99 && athmod > 0
+			set buffer to (98 - player.getbaseav athletics )
+			if buffer < athmod 
+				set buffer to (player.getbaseav athletics - 99)
+				player.modav athletics buffer
+				set athmod to (athmod - buffer)
+				player.setav athletics 99
+			else
+				set buffer to ( 0 - athmod )
+				player.modav athletics buffer
+				set buffer to (player.getbaseav athletics + athmod )
+				player.setav athletics buffer
+				set athmod to 0
+			endif
+		endif
+
+		if player.getbaseav acrobatics < 99 && acrmod > 0
+			set buffer to (98 - player.getbaseav acrobatics )
+			if buffer < acrmod 
+				set buffer to (player.getbaseav acrobatics - 99)
+				player.modav acrobatics buffer
+				set acrmod to (acrmod - buffer)
+				player.setav acrobatics 99
+			else
+				set buffer to ( 0 - acrmod )
+				player.modav acrobatics buffer
+				set buffer to (player.getbaseav acrobatics + acrmod )
+				player.setav acrobatics buffer
+				set acrmod to 0
+			endif
+		endif
+
+		if player.getbaseav lightarmor < 99 && ligmod > 0
+			set buffer to (98 - player.getbaseav lightarmor )
+			if buffer < ligmod 
+				set buffer to (player.getbaseav lightarmor - 99)
+				player.modav lightarmor buffer
+				set ligmod to (ligmod - buffer)
+				player.setav lightarmor 99
+			else
+				set buffer to ( 0 - ligmod )
+				player.modav lightarmor buffer
+				set buffer to (player.getbaseav lightarmor + ligmod )
+				player.setav lightarmor buffer
+				set ligmod to 0
+			endif
+		endif
+
+		if player.getbaseav security < 99 && secmod > 0
+			set buffer to (98 - player.getbaseav security )
+			if buffer < secmod 
+				set buffer to (player.getbaseav security - 99)
+				player.modav security buffer
+				set secmod to (secmod - buffer)
+				player.setav security 99
+			else
+				set buffer to ( 0 - secmod )
+				player.modav security buffer
+				set buffer to (player.getbaseav security + secmod )
+				player.setav security buffer
+				set secmod to 0
+			endif
+		endif
+
+		if player.getbaseav sneak < 99 && snemod > 0
+			set buffer to (98 - player.getbaseav sneak )
+			if buffer < snemod 
+				set buffer to (player.getbaseav sneak - 99)
+				player.modav sneak buffer
+				set snemod to (snemod - buffer)
+				player.setav sneak 99
+			else
+				set buffer to ( 0 - snemod )
+				player.modav sneak buffer
+				set buffer to (player.getbaseav sneak + snemod )
+				player.setav sneak buffer
+				set snemod to 0
+			endif
+		endif
+
+		if player.getbaseav marksman < 99 && marmod > 0
+			set buffer to (98 - player.getbaseav marksman )
+			if buffer < marmod 
+				set buffer to (player.getbaseav marksman - 99)
+				player.modav marksman buffer
+				set marmod to (marmod - buffer)
+				player.setav marksman 99
+			else
+				set buffer to ( 0 - marmod )
+				player.modav marksman buffer
+				set buffer to (player.getbaseav marksman + marmod )
+				player.setav marksman buffer
+				set marmod to 0
+			endif
+		endif
+
+		if player.getbaseav mercantile < 99 && mermod > 0
+			set buffer to (98 - player.getbaseav mercantile )
+			if buffer < mermod 
+				set buffer to (player.getbaseav mercantile - 99)
+				player.modav mercantile buffer
+				set mermod to (mermod - buffer)
+				player.setav mercantile 99
+			else
+				set buffer to ( 0 - mermod )
+				player.modav mercantile buffer
+				set buffer to (player.getbaseav mercantile + mermod )
+				player.setav mercantile buffer
+				set mermod to 0
+			endif
+		endif
+
+		if player.getbaseav speechcraft < 99 && spemod > 0
+			set buffer to (98 - player.getbaseav speechcraft )
+			if buffer < spemod 
+				set buffer to (player.getbaseav speechcraft - 99)
+				player.modav speechcraft buffer
+				set spemod to (spemod - buffer)
+				player.setav speechcraft 99
+			else
+				set buffer to ( 0 - spemod )
+				player.modav speechcraft buffer
+				set buffer to (player.getbaseav speechcraft + spemod )
+				player.setav speechcraft buffer
+				set spemod to 0
+			endif
+		endif
+
+		if player.getbaseav illusion < 99 && illmod > 0
+			set buffer to (98 - player.getbaseav illusion)
+			if buffer < illmod
+				set buffer to (player.getbaseav illusion - 99)
+				player.modav illusion buffer
+				set illmod to (illmod - buffer)
+				player.setav illusion 99
+			else
+				set buffer to ( 0 - illmod)
+				player.modav illusion buffer
+				set buffer to (player.getbaseav illusion + illmod)
+				player.setav illusion buffer
+				set illmod to 0
+			endif
+		endif
+
+		if player.getbaseav alchemy < 99 && alcmod > 0
+			set buffer to (98 - player.getbaseav alchemy)
+			if buffer < alcmod
+				set buffer to (player.getbaseav alchemy - 99)
+				player.modav alchemy buffer
+				set alcmod to (alcmod - buffer)
+				player.setav alchemy 99
+			else
+				set buffer to ( 0 - alcmod)
+				player.modav alchemy buffer
+				set buffer to (player.getbaseav alchemy + alcmod)
+				player.setav alchemy buffer
+				set alcmod to 0
+			endif
+		endif
+
+		if player.getbaseav conjuration < 99 && conmod > 0
+			set buffer to (98 - player.getbaseav conjuration)
+			if buffer < conmod
+				set buffer to (player.getbaseav conjuration - 99)
+				player.modav conjuration buffer
+				set conmod to (conmod - buffer)
+				player.setav conjuration 99
+			else
+				set buffer to ( 0 - conmod)
+				player.modav conjuration buffer
+				set buffer to (player.getbaseav conjuration + conmod)
+				player.setav conjuration buffer
+				set conmod to 0
+			endif
+		endif
+
+		if player.getbaseav mysticism < 99 && mysmod > 0
+			set buffer to (98 - player.getbaseav mysticism)
+			if buffer < mysmod
+				set buffer to (player.getbaseav mysticism - 99)
+				player.modav mysticism buffer
+				set mysmod to (mysmod - buffer)
+				player.setav mysticism 99
+			else
+				set buffer to ( 0 - mysmod)
+				player.modav mysticism buffer
+				set buffer to (player.getbaseav mysticism + mysmod)
+				player.setav mysticism buffer
+				set mysmod to 0
+			endif
+		endif
+
+		if player.getbaseav alteration < 99 && altmod > 0
+			set buffer to (98 - player.getbaseav alteration)
+			if buffer < altmod
+				set buffer to (player.getbaseav alteration - 99)
+				player.modav alteration buffer
+				set altmod to (altmod - buffer)
+				player.setav alteration 99
+			else
+				set buffer to ( 0 - altmod)
+				player.modav alteration buffer
+				set buffer to (player.getbaseav alteration + altmod)
+				player.setav alteration buffer
+				set altmod to 0
+			endif
+		endif
+
+		if player.getbaseav destruction < 99 && desmod > 0
+			set buffer to (98 - player.getbaseav destruction)
+			if buffer < desmod
+				set buffer to (player.getbaseav destruction - 99)
+				player.modav destruction buffer
+				set desmod to (desmod - buffer)
+				player.setav destruction 99
+			else
+				set buffer to ( 0 - desmod)
+				player.modav destruction buffer
+				set buffer to (player.getbaseav destruction + desmod)
+				player.setav destruction buffer
+				set desmod to 0
+			endif
+		endif
+
+		if player.getbaseav restoration < 99 && resmod > 0
+			set buffer to (98 - player.getbaseav restoration)
+			if buffer < resmod
+				set buffer to (player.getbaseav restoration - 99)
+				player.modav restoration buffer
+				set resmod to (resmod - buffer)
+				player.setav restoration 99
+			else
+				set buffer to ( 0 - resmod)
+				player.modav restoration buffer
+				set buffer to (player.getbaseav restoration + resmod)
+				player.setav restoration buffer
+				set resmod to 0
+			endif
+		endif
+
+
+		if player.getbaseav blade > 99
+			set buffer to ( player.getbaseav blade - 99 )
+			player.setav blade 99
+			player.modav blade buffer
+			set blamod to ( blamod + buffer )
+		endif
+
+		if player.getbaseav blunt > 99
+			set buffer to ( player.getbaseav blunt - 99 )
+			player.setav blunt 99
+			player.modav blunt buffer
+			set blumod to ( blumod + buffer )
+		endif
+
+		if player.getbaseav handtohand > 99
+			set buffer to ( player.getbaseav handtohand - 99 )
+			player.setav handtohand 99
+			player.modav handtohand buffer
+			set hanmod to ( hanmod + buffer )
+		endif
+
+		if player.getbaseav armorer > 99
+			set buffer to ( player.getbaseav armorer - 99 )
+			player.setav armorer 99
+			player.modav armorer buffer
+			set armmod to ( armmod + buffer )
+		endif
+
+		if player.getbaseav block > 99
+			set buffer to ( player.getbaseav block - 99 )
+			player.setav block 99
+			player.modav block buffer
+			set blomod to ( blomod + buffer )
+		endif
+
+		if player.getbaseav heavyarmor > 99
+			set buffer to ( player.getbaseav heavyarmor - 99 )
+			player.setav heavyarmor 99
+			player.modav heavyarmor buffer
+			set heamod to ( heamod + buffer )
+		endif
+
+		if player.getbaseav athletics > 99
+			set buffer to ( player.getbaseav athletics - 99 )
+			player.setav athletics 99
+			player.modav athletics buffer
+			set athmod to ( athmod + buffer )
+		endif
+
+		if player.getbaseav acrobatics > 99
+			set buffer to ( player.getbaseav acrobatics - 99 )
+			player.setav acrobatics 99
+			player.modav acrobatics buffer
+			set acrmod to ( acrmod + buffer )
+		endif
+
+		if player.getbaseav lightarmor > 99
+			set buffer to ( player.getbaseav lightarmor - 99 )
+			player.setav lightarmor 99
+			player.modav lightarmor buffer
+			set ligmod to ( ligmod + buffer )
+		endif
+
+		if player.getbaseav security > 99
+			set buffer to ( player.getbaseav security - 99 )
+			player.setav security 99
+			player.modav security buffer
+			set secmod to ( secmod + buffer )
+		endif
+
+		if player.getbaseav sneak > 99
+			set buffer to ( player.getbaseav sneak - 99 )
+			player.setav sneak 99
+			player.modav sneak buffer
+			set snemod to ( snemod + buffer )
+		endif
+
+		if player.getbaseav marksman > 99
+			set buffer to ( player.getbaseav marksman - 99 )
+			player.setav marksman 99
+			player.modav marksman buffer
+			set marmod to ( marmod + buffer )
+		endif
+
+		if player.getbaseav mercantile > 99
+			set buffer to ( player.getbaseav mercantile - 99 )
+			player.setav mercantile 99
+			player.modav mercantile buffer
+			set mermod to ( mermod + buffer )
+		endif
+
+		if player.getbaseav speechcraft > 99
+			set buffer to ( player.getbaseav speechcraft - 99 )
+			player.setav speechcraft 99
+			player.modav speechcraft buffer
+			set spemod to ( spemod + buffer )
+		endif
+
+		if player.getbaseav illusion > 99
+			set buffer to ( player.getbaseav illusion - 99 )
+			player.setav illusion 99
+			player.modav illusion buffer
+			set illmod to ( illmod + buffer )
+		endif
+
+		if player.getbaseav alchemy > 99
+			set buffer to ( player.getbaseav alchemy - 99 )
+			player.setav alchemy 99
+			player.modav alchemy buffer
+			set alcmod to ( alcmod + buffer )
+		endif
+
+		if player.getbaseav conjuration > 99
+			set buffer to ( player.getbaseav conjuration - 99 )
+			player.setav conjuration 99
+			player.modav conjuration buffer
+			set conmod to ( conmod + buffer )
+		endif
+
+		if player.getbaseav mysticism > 99
+			set buffer to ( player.getbaseav mysticism - 99 )
+			player.setav mysticism 99
+			player.modav mysticism buffer
+			set mysmod to ( mysmod + buffer )
+		endif
+
+		if player.getbaseav alteration > 99
+			set buffer to ( player.getbaseav alteration - 99 )
+			player.setav alteration 99
+			player.modav alteration buffer
+			set altmod to ( altmod + buffer )
+		endif
+
+		if player.getbaseav destruction > 99
+			set buffer to ( player.getbaseav destruction - 99 )
+			player.setav destruction 99
+			player.modav destruction buffer
+			set desmod to ( desmod + buffer )
+		endif
+
+		if player.getbaseav restoration > 99
+			set buffer to ( player.getbaseav restoration - 99 )
+			player.setav restoration 99
+			player.modav restoration buffer
+			set resmod to ( resmod + buffer )
+		endif
+
+end
+
+begin menumode
+
+		if player.getbaseav blade < 99 && blamod > 0
+			set buffer to (98 - player.getbaseav blade )
+			if buffer < blamod 
+				set buffer to (player.getbaseav blade - 99)
+				player.modav blade buffer
+				set blamod to (blamod - buffer)
+				player.setav blade 99
+			else
+				set buffer to ( 0 - blamod )
+				player.modav blade buffer
+				set buffer to (player.getbaseav blade + blamod )
+				player.setav blade buffer
+				set blamod to 0
+			endif
+		endif
+	
+		if player.getbaseav blunt < 99 && blumod > 0
+			set buffer to (98 - player.getbaseav blunt )
+			if buffer < blumod 
+				set buffer to (player.getbaseav blunt - 99)
+				player.modav blunt buffer
+				set blumod to (blumod - buffer)
+				player.setav blunt 99
+			else
+				set buffer to ( 0 - blumod )
+				player.modav blunt buffer
+				set buffer to (player.getbaseav blunt + blumod )
+				player.setav blunt buffer
+				set blumod to 0
+			endif
+		endif
+
+		if player.getbaseav handtohand < 99 && hanmod > 0
+			set buffer to (98 - player.getbaseav handtohand )
+			if buffer < hanmod 
+				set buffer to (player.getbaseav handtohand - 99)
+				player.modav handtohand buffer
+				set hanmod to (hanmod - buffer)
+				player.setav handtohand 99
+			else
+				set buffer to ( 0 - hanmod )
+				player.modav handtohand buffer
+				set buffer to (player.getbaseav handtohand + hanmod )
+				player.setav handtohand buffer
+				set hanmod to 0
+			endif
+		endif
+
+		if player.getbaseav armorer < 99 && armmod > 0
+			set buffer to (98 - player.getbaseav armorer )
+			if buffer < armmod 
+				set buffer to (player.getbaseav armorer - 99)
+				player.modav armorer buffer
+				set armmod to (armmod - buffer)
+				player.setav armorer 99
+			else
+				set buffer to ( 0 - armmod )
+				player.modav armorer buffer
+				set buffer to (player.getbaseav armorer + armmod )
+				player.setav armorer buffer
+				set armmod to 0
+			endif
+		endif
+
+		if player.getbaseav block < 99 && blomod > 0
+			set buffer to (98 - player.getbaseav block )
+			if buffer < blomod 
+				set buffer to (player.getbaseav block - 99)
+				player.modav block buffer
+				set blomod to (blomod - buffer)
+				player.setav block 99
+			else
+				set buffer to ( 0 - blomod )
+				player.modav block buffer
+				set buffer to (player.getbaseav block + blomod )
+				player.setav block buffer
+				set blomod to 0
+			endif
+		endif
+
+		if player.getbaseav heavyarmor < 99 && heamod > 0
+			set buffer to (98 - player.getbaseav heavyarmor )
+			if buffer < heamod 
+				set buffer to (player.getbaseav heavyarmor - 99)
+				player.modav heavyarmor buffer
+				set heamod to (heamod - buffer)
+				player.setav heavyarmor 99
+			else
+				set buffer to ( 0 - heamod )
+				player.modav heavyarmor buffer
+				set buffer to (player.getbaseav heavyarmor + heamod )
+				player.setav heavyarmor buffer
+				set heamod to 0
+			endif
+		endif
+
+		if player.getbaseav athletics < 99 && athmod > 0
+			set buffer to (98 - player.getbaseav athletics )
+			if buffer < athmod 
+				set buffer to (player.getbaseav athletics - 99)
+				player.modav athletics buffer
+				set athmod to (athmod - buffer)
+				player.setav athletics 99
+			else
+				set buffer to ( 0 - athmod )
+				player.modav athletics buffer
+				set buffer to (player.getbaseav athletics + athmod )
+				player.setav athletics buffer
+				set athmod to 0
+			endif
+		endif
+
+		if player.getbaseav acrobatics < 99 && acrmod > 0
+			set buffer to (98 - player.getbaseav acrobatics )
+			if buffer < acrmod 
+				set buffer to (player.getbaseav acrobatics - 99)
+				player.modav acrobatics buffer
+				set acrmod to (acrmod - buffer)
+				player.setav acrobatics 99
+			else
+				set buffer to ( 0 - acrmod )
+				player.modav acrobatics buffer
+				set buffer to (player.getbaseav acrobatics + acrmod )
+				player.setav acrobatics buffer
+				set acrmod to 0
+			endif
+		endif
+
+		if player.getbaseav lightarmor < 99 && ligmod > 0
+			set buffer to (98 - player.getbaseav lightarmor )
+			if buffer < ligmod 
+				set buffer to (player.getbaseav lightarmor - 99)
+				player.modav lightarmor buffer
+				set ligmod to (ligmod - buffer)
+				player.setav lightarmor 99
+			else
+				set buffer to ( 0 - ligmod )
+				player.modav lightarmor buffer
+				set buffer to (player.getbaseav lightarmor + ligmod )
+				player.setav lightarmor buffer
+				set ligmod to 0
+			endif
+		endif
+
+		if player.getbaseav security < 99 && secmod > 0
+			set buffer to (98 - player.getbaseav security )
+			if buffer < secmod 
+				set buffer to (player.getbaseav security - 99)
+				player.modav security buffer
+				set secmod to (secmod - buffer)
+				player.setav security 99
+			else
+				set buffer to ( 0 - secmod )
+				player.modav security buffer
+				set buffer to (player.getbaseav security + secmod )
+				player.setav security buffer
+				set secmod to 0
+			endif
+		endif
+
+		if player.getbaseav sneak < 99 && snemod > 0
+			set buffer to (98 - player.getbaseav sneak )
+			if buffer < snemod 
+				set buffer to (player.getbaseav sneak - 99)
+				player.modav sneak buffer
+				set snemod to (snemod - buffer)
+				player.setav sneak 99
+			else
+				set buffer to ( 0 - snemod )
+				player.modav sneak buffer
+				set buffer to (player.getbaseav sneak + snemod )
+				player.setav sneak buffer
+				set snemod to 0
+			endif
+		endif
+
+		if player.getbaseav marksman < 99 && marmod > 0
+			set buffer to (98 - player.getbaseav marksman )
+			if buffer < marmod 
+				set buffer to (player.getbaseav marksman - 99)
+				player.modav marksman buffer
+				set marmod to (marmod - buffer)
+				player.setav marksman 99
+			else
+				set buffer to ( 0 - marmod )
+				player.modav marksman buffer
+				set buffer to (player.getbaseav marksman + marmod )
+				player.setav marksman buffer
+				set marmod to 0
+			endif
+		endif
+
+		if player.getbaseav mercantile < 99 && mermod > 0
+			set buffer to (98 - player.getbaseav mercantile )
+			if buffer < mermod 
+				set buffer to (player.getbaseav mercantile - 99)
+				player.modav mercantile buffer
+				set mermod to (mermod - buffer)
+				player.setav mercantile 99
+			else
+				set buffer to ( 0 - mermod )
+				player.modav mercantile buffer
+				set buffer to (player.getbaseav mercantile + mermod )
+				player.setav mercantile buffer
+				set mermod to 0
+			endif
+		endif
+
+		if player.getbaseav speechcraft < 99 && spemod > 0
+			set buffer to (98 - player.getbaseav speechcraft )
+			if buffer < spemod 
+				set buffer to (player.getbaseav speechcraft - 99)
+				player.modav speechcraft buffer
+				set spemod to (spemod - buffer)
+				player.setav speechcraft 99
+			else
+				set buffer to ( 0 - spemod )
+				player.modav speechcraft buffer
+				set buffer to (player.getbaseav speechcraft + spemod )
+				player.setav speechcraft buffer
+				set spemod to 0
+			endif
+		endif
+
+		if player.getbaseav illusion < 99 && illmod > 0
+			set buffer to (98 - player.getbaseav illusion)
+			if buffer < illmod
+				set buffer to (player.getbaseav illusion - 99)
+				player.modav illusion buffer
+				set illmod to (illmod - buffer)
+				player.setav illusion 99
+			else
+				set buffer to ( 0 - illmod)
+				player.modav illusion buffer
+				set buffer to (player.getbaseav illusion + illmod)
+				player.setav illusion buffer
+				set illmod to 0
+			endif
+		endif
+
+		if player.getbaseav alchemy < 99 && alcmod > 0
+			set buffer to (98 - player.getbaseav alchemy)
+			if buffer < alcmod
+				set buffer to (player.getbaseav alchemy - 99)
+				player.modav alchemy buffer
+				set alcmod to (alcmod - buffer)
+				player.setav alchemy 99
+			else
+				set buffer to ( 0 - alcmod)
+				player.modav alchemy buffer
+				set buffer to (player.getbaseav alchemy + alcmod)
+				player.setav alchemy buffer
+				set alcmod to 0
+			endif
+		endif
+
+		if player.getbaseav conjuration < 99 && conmod > 0
+			set buffer to (98 - player.getbaseav conjuration)
+			if buffer < conmod
+				set buffer to (player.getbaseav conjuration - 99)
+				player.modav conjuration buffer
+				set conmod to (conmod - buffer)
+				player.setav conjuration 99
+			else
+				set buffer to ( 0 - conmod)
+				player.modav conjuration buffer
+				set buffer to (player.getbaseav conjuration + conmod)
+				player.setav conjuration buffer
+				set conmod to 0
+			endif
+		endif
+
+		if player.getbaseav mysticism < 99 && mysmod > 0
+			set buffer to (98 - player.getbaseav mysticism)
+			if buffer < mysmod
+				set buffer to (player.getbaseav mysticism - 99)
+				player.modav mysticism buffer
+				set mysmod to (mysmod - buffer)
+				player.setav mysticism 99
+			else
+				set buffer to ( 0 - mysmod)
+				player.modav mysticism buffer
+				set buffer to (player.getbaseav mysticism + mysmod)
+				player.setav mysticism buffer
+				set mysmod to 0
+			endif
+		endif
+
+		if player.getbaseav alteration < 99 && altmod > 0
+			set buffer to (98 - player.getbaseav alteration)
+			if buffer < altmod
+				set buffer to (player.getbaseav alteration - 99)
+				player.modav alteration buffer
+				set altmod to (altmod - buffer)
+				player.setav alteration 99
+			else
+				set buffer to ( 0 - altmod)
+				player.modav alteration buffer
+				set buffer to (player.getbaseav alteration + altmod)
+				player.setav alteration buffer
+				set altmod to 0
+			endif
+		endif
+
+		if player.getbaseav destruction < 99 && desmod > 0
+			set buffer to (98 - player.getbaseav destruction)
+			if buffer < desmod
+				set buffer to (player.getbaseav destruction - 99)
+				player.modav destruction buffer
+				set desmod to (desmod - buffer)
+				player.setav destruction 99
+			else
+				set buffer to ( 0 - desmod)
+				player.modav destruction buffer
+				set buffer to (player.getbaseav destruction + desmod)
+				player.setav destruction buffer
+				set desmod to 0
+			endif
+		endif
+
+		if player.getbaseav restoration < 99 && resmod > 0
+			set buffer to (98 - player.getbaseav restoration)
+			if buffer < resmod
+				set buffer to (player.getbaseav restoration - 99)
+				player.modav restoration buffer
+				set resmod to (resmod - buffer)
+				player.setav restoration 99
+			else
+				set buffer to ( 0 - resmod)
+				player.modav restoration buffer
+				set buffer to (player.getbaseav restoration + resmod)
+				player.setav restoration buffer
+				set resmod to 0
+			endif
+		endif
+
+
+		if player.getbaseav blade > 99
+			set buffer to ( player.getbaseav blade - 99 )
+			player.setav blade 99
+			player.modav blade buffer
+			set blamod to ( blamod + buffer )
+		endif
+
+		if player.getbaseav blunt > 99
+			set buffer to ( player.getbaseav blunt - 99 )
+			player.setav blunt 99
+			player.modav blunt buffer
+			set blumod to ( blumod + buffer )
+		endif
+
+		if player.getbaseav handtohand > 99
+			set buffer to ( player.getbaseav handtohand - 99 )
+			player.setav handtohand 99
+			player.modav handtohand buffer
+			set hanmod to ( hanmod + buffer )
+		endif
+
+		if player.getbaseav armorer > 99
+			set buffer to ( player.getbaseav armorer - 99 )
+			player.setav armorer 99
+			player.modav armorer buffer
+			set armmod to ( armmod + buffer )
+		endif
+
+		if player.getbaseav block > 99
+			set buffer to ( player.getbaseav block - 99 )
+			player.setav block 99
+			player.modav block buffer
+			set blomod to ( blomod + buffer )
+		endif
+
+		if player.getbaseav heavyarmor > 99
+			set buffer to ( player.getbaseav heavyarmor - 99 )
+			player.setav heavyarmor 99
+			player.modav heavyarmor buffer
+			set heamod to ( heamod + buffer )
+		endif
+
+		if player.getbaseav athletics > 99
+			set buffer to ( player.getbaseav athletics - 99 )
+			player.setav athletics 99
+			player.modav athletics buffer
+			set athmod to ( athmod + buffer )
+		endif
+
+		if player.getbaseav acrobatics > 99
+			set buffer to ( player.getbaseav acrobatics - 99 )
+			player.setav acrobatics 99
+			player.modav acrobatics buffer
+			set acrmod to ( acrmod + buffer )
+		endif
+
+		if player.getbaseav lightarmor > 99
+			set buffer to ( player.getbaseav lightarmor - 99 )
+			player.setav lightarmor 99
+			player.modav lightarmor buffer
+			set ligmod to ( ligmod + buffer )
+		endif
+
+		if player.getbaseav security > 99
+			set buffer to ( player.getbaseav security - 99 )
+			player.setav security 99
+			player.modav security buffer
+			set secmod to ( secmod + buffer )
+		endif
+
+		if player.getbaseav sneak > 99
+			set buffer to ( player.getbaseav sneak - 99 )
+			player.setav sneak 99
+			player.modav sneak buffer
+			set snemod to ( snemod + buffer )
+		endif
+
+		if player.getbaseav marksman > 99
+			set buffer to ( player.getbaseav marksman - 99 )
+			player.setav marksman 99
+			player.modav marksman buffer
+			set marmod to ( marmod + buffer )
+		endif
+
+		if player.getbaseav mercantile > 99
+			set buffer to ( player.getbaseav mercantile - 99 )
+			player.setav mercantile 99
+			player.modav mercantile buffer
+			set mermod to ( mermod + buffer )
+		endif
+
+		if player.getbaseav speechcraft > 99
+			set buffer to ( player.getbaseav speechcraft - 99 )
+			player.setav speechcraft 99
+			player.modav speechcraft buffer
+			set spemod to ( spemod + buffer )
+		endif
+
+		if player.getbaseav illusion > 99
+			set buffer to ( player.getbaseav illusion - 99 )
+			player.setav illusion 99
+			player.modav illusion buffer
+			set illmod to ( illmod + buffer )
+		endif
+
+		if player.getbaseav alchemy > 99
+			set buffer to ( player.getbaseav alchemy - 99 )
+			player.setav alchemy 99
+			player.modav alchemy buffer
+			set alcmod to ( alcmod + buffer )
+		endif
+
+		if player.getbaseav conjuration > 99
+			set buffer to ( player.getbaseav conjuration - 99 )
+			player.setav conjuration 99
+			player.modav conjuration buffer
+			set conmod to ( conmod + buffer )
+		endif
+
+		if player.getbaseav mysticism > 99
+			set buffer to ( player.getbaseav mysticism - 99 )
+			player.setav mysticism 99
+			player.modav mysticism buffer
+			set mysmod to ( mysmod + buffer )
+		endif
+
+		if player.getbaseav alteration > 99
+			set buffer to ( player.getbaseav alteration - 99 )
+			player.setav alteration 99
+			player.modav alteration buffer
+			set altmod to ( altmod + buffer )
+		endif
+
+		if player.getbaseav destruction > 99
+			set buffer to ( player.getbaseav destruction - 99 )
+			player.setav destruction 99
+			player.modav destruction buffer
+			set desmod to ( desmod + buffer )
+		endif
+
+		if player.getbaseav restoration > 99
+			set buffer to ( player.getbaseav restoration - 99 )
+			player.setav restoration 99
+			player.modav restoration buffer
+			set resmod to ( resmod + buffer )
+		endif
